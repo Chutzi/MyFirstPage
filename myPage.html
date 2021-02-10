@@ -1,0 +1,149 @@
+<!DOCTYPE>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi sitio web</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h3>Bienvenido a mi sitio web</h3><br>
+        <button class="btn" type="button" onclick="">default</button>
+        <button class="btn btn-primary" type="button" onclick="">primary</button>
+        <button class="btn btn-secondary" type="button" onclick="">secondary</button>
+        <button class="btn btn-info" type="button" onclick="">info</button>
+        <button class="btn btn-success" type="button" onclick="">Success</button>
+        <button class="btn btn-warning" type="button" onclick="">warning</button>
+        <button class="btn btn-danger" type="button" onclick="">danger</button>
+        <button class="btn btn-dark" type="button" onclick="">dark</button>
+        <button class="btn btn-light" type="button" onclick="">light</button>
+        <button class="btn btn-link" type="button" onclick="">link</button>
+    </div>
+    <div style="text-align: center;">
+        <br>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+    </div>
+    <div>
+        <br>
+          <div class="alert alert-primary" role="alert">
+            This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-secondary" role="alert">
+            This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-success" role="alert">
+            This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-danger" role="alert">
+            This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-warning" role="alert">
+            This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-info" role="alert">
+            This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-light" role="alert">
+            This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-dark" role="alert">
+            This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+    </div>
+    <div>
+        <p class="text-primary">.text-primary</p>
+        <p class="text-secondary">.text-secondary</p>
+        <p class="text-success">.text-success</p>
+        <p class="text-danger">.text-danger</p>
+        <p class="text-warning">.text-warning</p>
+        <p class="text-info">.text-info</p>
+        <p class="text-light bg-dark">.text-light</p>
+        <p class="text-dark">.text-dark</p>
+        <p class="text-muted">.text-muted</p>
+        <p class="text-white bg-dark">.text-white</p>
+        <br>
+    </div>
+    <div>
+        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+        <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+        <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+    </div>
+    
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <h1>Formulario</h1>    
+        </div>
+        <div class="row justify-content-center align-items-center h-10">
+            <form class="form-horizontal">
+                <div class="form-group">
+                  <p>Ingrese los siguientes datos</p>
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                  <small id="emailHelp" class="form-text text-muted">No compartiremos tu informacion con nadie.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Hecha un vistazo</label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary" onclick="mensaje()">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div style="text-align: center;">
+      <button type="submit" class="btn btn-secondary" onclick="numero()">Validar numero</button>
+      <br>
+    </div>
+    <div>
+      <br>
+    </div>
+</body>
+</html>
+
+<script>
+    function mensaje()
+    {
+        debugger;
+        var x = 10;
+        var y = 90;
+        alert("Hola mundo desde JavaScript al "+(x+y));
+    }
+
+    function numero()
+    {
+      let v = true, band = true, number;
+      let regex = /^[0-9]+$/;
+      do{
+        (band)? number = prompt("Ingresa un numero") 
+        : number = prompt("Error, Ingresa un numero");
+
+        if(!regex.test(number)){
+            console.error("Formato de entrada no valida");
+            band = false;
+        }
+        else  v = false;
+        
+      }while(v);
+      document.writeln("Tu numero es: "+number);
+      alert("Tu numero es valido");
+    }
+</script>
